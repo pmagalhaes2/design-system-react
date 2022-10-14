@@ -7,6 +7,14 @@ export default {
   args: {
     children: "Teste",
   },
+  argTypes: {
+    size: {
+      options: ["sm", "md", "lg"],
+      control: {
+        type: "inline-radio",
+      },
+    },
+  },
 } as Meta<TextProps>;
 
 export const Default: StoryObj<TextProps> = {};
